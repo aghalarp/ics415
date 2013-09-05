@@ -1,0 +1,55 @@
+html, body {
+	height: 100%;
+	w/idth: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F0D7A1;/*#f9ecba*/
+	background-image:url('images/dim15.png');
+}
+
+table, th, td{
+	border: 3px solid #c8b17d; /* f0d7a1 */
+	border-collapse: collapse;
+	height: 100%;
+	width: 100%;
+}
+
+
+#container-table {
+	height: 100%;
+	width: 100%;
+	color: #523A1D; /* Changes ALL font color within this div */
+}
+
+#header-table {
+	height: 25%;
+	width: 100%;
+}
+
+#navbar-table {
+	height: 50px;
+}
+
+#sidebar-table {
+	width: 25%;
+}
+
+#content-table  {
+	width: 100%;
+}
+
+#content-table table, th, td {
+	width: 0;
+	height: 0;
+}
+
+/* Had to do this for that single borderless table in homepage! */
+#content-table table.borderless, #content-table table.borderless th , #content-table table.borderless td{
+	border-style: none;
+}
+
+#footer-table {
+	height: 50px;
+}
+
+

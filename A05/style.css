@@ -1,0 +1,76 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F0D7A1;/*#f9ecba*/
+	background-image:url('images/dim15.png');
+}
+
+/* Don't REALLY need this div at the moment, but could come in handy later if I want to modify the layout */
+#page-container {
+	height: 100%;
+	width: calc(100% - 6px);
+	color: #523A1D; /* Changes ALL font color within this div */
+}
+
+header {
+	width: 100%;
+	height: 25%;
+	border: 3px solid #c8b17d;
+	b/ackground: red;
+}
+
+nav {
+	height: 50px;
+	width: 100%;
+	border: 3px solid #c8b17d;
+	border-top: none;
+	b/ackground: blue;
+}
+
+aside {
+	float: left;
+	width: 25%;
+	height: 100%;
+	border: 3px solid #c8b17d;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	b/ackground: green;
+}
+
+footer {
+	clear:both;
+	height: 50px;
+	width: 100%;
+	border: 3px solid #c8b17d;
+	text-align: center;
+	b/order-top: none;
+	b/ackground: yellow;
+}
+
+
+#content {
+	float: left;
+	width: 74%;
+	height: auto;
+	border: 3px solid #c8b17d;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	b/ackground: red;
+}
+
+/* Container for aside and content divs */
+#body-container {
+	/* Firefox */
+	he/ight: -moz-calc(75% - 100px);
+	/* WebKit */
+	h/eight: -webkit-calc(75% - 100px);
+	/* Opera */
+	h/eight: -o-calc(75% - 100px);
+	/* Standard */
+	height: 100%;
+	width: 100%;
+}
