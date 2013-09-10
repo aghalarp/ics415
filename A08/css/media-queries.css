@@ -1,0 +1,144 @@
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+
+	/* pagewrap - reset width to 95% */
+	#pagewrap {
+		width: 95%;
+	}
+
+	/* content - reset width to 30% */
+	#content {
+		width: 30%;
+		padding: 3% 4%;
+	}
+
+	/* sidebar - reset width to 30% */
+	#sidebar {
+		width: 30%;
+	}
+	#sidebar .widget {
+		padding: 8% 7%;
+		margin-bottom: 10px;
+	}
+	
+	#left-sidebar {
+		width: 30%;
+		margin-right: 1%; /* Seems to do the trick for maintaining a balanced margin between the left sidebar and content div */
+	}
+	#left-sidebar .widget {
+		padding: 8% 7%;
+		margin-bottom: 10px;
+	}
+
+	/* embedded videos - make the embedded videos flexible */
+	.video embed,
+	.video object,
+	.video iframe {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* header - reset height to auto */
+	#header {
+		height: auto;
+	}
+
+	/* search form - re-position the searchform to 5px top */
+	#searchform {
+		position: absolute;
+		top: 5px;
+		right: 0;
+		z-index: 100;
+		height: 40px;
+	}
+	#searchform #s {
+		width: 70px;
+	}
+	#searchform #s:focus {
+		width: 150px;
+	}
+
+	/* main nav - reset the position to static */
+	#main-nav {
+		position: static;
+	}
+
+	/* site logo - reset the position to static */
+	#site-logo {
+		margin: 15px 100px 5px 0;
+		position: static;
+	}
+
+	/* site description - reset the position to static */
+	#site-description {
+		margin: 0 0 15px;
+		position: static;
+	}
+
+	/* content - reset the width to auto (this will make the container to expand fullwidth) and get rid of the float */
+	#content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+	}
+
+	/* sidebar - reset width to 100% and get rid of the float */
+	#sidebar {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	#sidebar .widget {
+		padding: 3% 4%;
+		margin: 0 0 10px;
+	}
+	
+	/* Left Sidebar */
+	#left-sidebar {
+		width: 100%;
+		margin: 0;
+		margin-top: 20px; /* Since couldn't figure out how to properly put this div below content, need to give margin between this div and navigation div */
+		float: none;
+	}
+	#left-sidebar .widget {
+		padding: 3% 4%;
+		margin: 0 0 10px;
+	}
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		min-height: 250px;
+	}
+
+}
+
+/************************************************************************************
+smaller than 560 (Supposed to be 480??)
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone). By default, iPhone enlarges the text size so it reads more comfortably */
+	html {
+		-webkit-text-size-adjust: none; /* disable the text size adjustment */
+	}
+
+	/* main nav - reset the font size to 90% */
+	#main-nav a {
+		font-size: 90%;
+		padding: 10px 8px;
+	}
+
+}
+

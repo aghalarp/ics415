@@ -1,0 +1,105 @@
+body {
+	background: #0d1424;
+	color: #666;
+}
+
+/************************************************************************************
+Twitter Bootstrap changes for A09
+*************************************************************************************/
+.page-header {
+	border-bottom: none;
+	color: #fff;
+}
+.page-header h1 {
+	color: #fff;
+	font-weight: bold;
+}
+
+.page-header p {
+	font-style: italic;
+}
+
+.navbar-default {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.navbar-background {
+	background: #ccc;
+	outline-color: none;
+	/* gradient */
+	background: #6a6a6a url(../images/nav-bar-bg.png) repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#6a6a6a));
+	background: -moz-linear-gradient(top,  #b9b9b9,  #6a6a6a);
+	background: linear-gradient(-90deg, #b9b9b9, #6a6a6a);
+}
+
+/************************************************************************************
+General Styling
+*************************************************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+}
+
+a {
+	color: #026acb;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#left-sidebar {
+	background: #fff;
+	margin: 0 0 30px;
+	padding: 10px 20px;
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+#middle {
+	background: #fff;
+	padding: 20px 35px;
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.post-title a {
+	text-decoration: none;
+	color: #000;
+	font: bold 26px/120% Arial, Helvetica, sans-serif;
+}
+
+h1.post-title {
+	margin-top: 0px;
+}
+
+/* Flickr */
+.flickr_badge_image {
+	margin-top: 10px;
+}
+.flickr_badge_image img {
+	width: 48px;
+	height: 48px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	float: left;
+}
