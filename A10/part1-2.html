@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<title>myScript.js Testing</title>
+<script src="myScript.js"></script>
+</head>
+
+<body>
+<h1>Tests Part 1: getClasses(elem)</h1>
+<p class="foo bar">First p tag</p>
+<p class="hope this works">Second p tag</p>
+<pre>
+<script>
+var arr = getClasses('p');
+document.writeln(arr);
+document.writeln(arr[0]);
+document.writeln(arr[1]);
+</script>
+</pre>
+
+<h1>Tests Part 2: addClass(elem, className)</h1>
+<h4 class="Part two">Testing on this H4 element</h4>
+<h5>Testing on classless H5 element</h5>
+
+<button onclick="addClass('h4', 'some new classes')">Add Classes to H4</button>
+<button onclick="addClass('h5', 'test1 test2')">Add Classes to H5</button>
+</body>
+
+</html>
