@@ -1,0 +1,16 @@
+#first
+{
+  height: 320px;
+  width: 480px;
+}
+
+#second
+{
+  height: 1024px;
+  width: 768px;
+}
+
+div
+{
+  border: 1px solid black;
+}
