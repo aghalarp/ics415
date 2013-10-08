@@ -11,7 +11,7 @@
 <html>
 <head>
 <title>A15</title>
-  
+
 <script>
 /**
  * Validates Comment form data
@@ -43,16 +43,16 @@ function validateCommentForm(){
 <script>
 function validateLoginForm(){
 	var noErrorsFound = true; //Return value. If false, errors were found and form will not submit to action url.
-	var name = document.forms["loginForm"]["name"].value;
+	var name = document.forms["loginForm"]["formLoginName"].value;
 	
 	//Clear all previous errors in the case where form is submitted multiple times. Otherwise error messages will just continue to concatenate.
 	document.getElementById("errors").innerHTML = "";
 	//Clear previous red colored forms
-	document.forms["loginForm"]["name"].setAttribute("style", "background-color: transparent");
+	document.forms["loginForm"]["formLoginName"].setAttribute("style", "background-color: transparent");
 	
 	//Check that name field not empty
 	if (name.length == 0) {
-		document.forms["loginForm"]["name"].setAttribute("style", "background-color: red");
+		document.forms["loginForm"]["formLoginName"].setAttribute("style", "background-color: red");
 		document.getElementById("errors").innerHTML += "Error: Name field is empty.<br />";
 		noErrorsFound = false; //This is important. It will prevent form from submitting to its action url.
 	}
@@ -60,6 +60,7 @@ function validateLoginForm(){
 	return noErrorsFound;
 }
 </script>
+
 </head>
 
 <body>
@@ -228,7 +229,7 @@ function validateLoginForm(){
     <form name="loginForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateLoginForm()" method="post">
     Name: <input type="text" name="formLoginName"><br/>
     <input type="submit" value="Submit">
-    
+    </form>
     <?php
   }
   
