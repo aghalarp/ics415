@@ -225,6 +225,8 @@ function validateLoginForm(){
   else if(!isset($_COOKIE['userNameCookie'])) { //User cookie not set, so display login form.
     ?>
     
+    <p id="errors"></p>
+    
     <p>Please Log in:</p> <br />
     <form name="loginForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateLoginForm()" method="post">
     Name: <input type="text" name="formLoginName"><br/>
